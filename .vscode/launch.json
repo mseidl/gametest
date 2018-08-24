@@ -1,0 +1,106 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "gametest (Debug)",
+			"request": "launch",
+			"preLaunchTask": "gametest Linux Debug Build",
+			"program": "/home/mseidl/src/gametest/Binaries/Linux/gametest-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/mseidl/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "gametest (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "gametest Linux DebugGame Build",
+			"program": "/home/mseidl/src/gametest/Binaries/Linux/gametest-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/mseidl/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "gametest (Development)",
+			"request": "launch",
+			"preLaunchTask": "gametest Linux Development Build",
+			"program": "/home/mseidl/src/gametest/Binaries/Linux/gametest",
+			"args": [
+			],
+			"cwd": "/home/mseidl/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "gametest (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "gametest Linux Shipping Build",
+			"program": "/home/mseidl/src/gametest/Binaries/Linux/gametest-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/mseidl/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "gametest (Test)",
+			"request": "launch",
+			"preLaunchTask": "gametest Linux Test Build",
+			"program": "/home/mseidl/src/gametest/Binaries/Linux/gametest-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/mseidl/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "gametestEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "gametestEditor Linux Debug Build",
+			"program": "/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-debug"
+			],
+			"cwd": "/home/mseidl/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "gametestEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "gametestEditor Linux DebugGame Build",
+			"program": "/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-debug"
+			],
+			"cwd": "/home/mseidl/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "gametestEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "gametestEditor Linux Development Build",
+			"program": "/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/mseidl/src/gametest/gametest.uproject"
+			],
+			"cwd": "/home/mseidl/src/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/mseidl/src/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/mseidl/src/gametest/gametest.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/mseidl/src/UnrealEngine"
+		}
+	]
+}

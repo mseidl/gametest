@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "gametest Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Mac",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"IOS",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"HTML5",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"Linux",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Shipping",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametest TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametest TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametest",
+				"TVOS",
+				"Test",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Linux",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Linux",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametestEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Linux",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Linux",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Linux",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametestEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Linux",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Linux",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Linux",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametestEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Linux",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Mac",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Mac",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametestEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Mac",
+				"Debug",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Mac",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Mac",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametestEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Mac",
+				"DebugGame",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Mac",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Mac",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"gametestEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		},
+		{
+			"label": "gametestEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"gametestEditor",
+				"Mac",
+				"Development",
+				"/home/mseidl/src/gametest/gametest.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mseidl/src/UnrealEngine"
+			}
+		}
+	]
+}

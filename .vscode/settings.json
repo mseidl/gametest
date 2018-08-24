@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/home/mseidl/src/gametest/.vscode": true,
+		"/home/mseidl/src/gametest/Content": true,
+		"/home/mseidl/src/gametest/Intermediate": true
+	}
+}

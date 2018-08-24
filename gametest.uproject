@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{1BAE6507-1501-1106-0021-02C35F9BFC1D}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "gametest",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

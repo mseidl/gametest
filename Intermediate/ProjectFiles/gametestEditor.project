@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="gametestEditor">
+  <File Name="/home/mseidl/src/gametest/gametest.uproject" />
+  <VirtualDirectory Name="Source">
+    <File Name="/home/mseidl/src/gametest/Source/gametest.Target.cs" />
+    <File Name="/home/mseidl/src/gametest/Source/gametestEditor.Target.cs" />
+    <VirtualDirectory Name="gametest">
+      <File Name="/home/mseidl/src/gametest/Source/gametest/gametest.Build.cs" />
+      <File Name="/home/mseidl/src/gametest/Source/gametest/gametest.cpp" />
+      <File Name="/home/mseidl/src/gametest/Source/gametest/gametest.h" />
+      <File Name="/home/mseidl/src/gametest/Source/gametest/gametestGameModeBase.cpp" />
+      <File Name="/home/mseidl/src/gametest/Source/gametest/gametestGameModeBase.h" />
+    </VirtualDirectory>
+  </VirtualDirectory>
+  <VirtualDirectory Name="Config">
+    <File Name="/home/mseidl/src/gametest/Config/DefaultEditor.ini" />
+    <File Name="/home/mseidl/src/gametest/Config/DefaultEngine.ini" />
+    <File Name="/home/mseidl/src/gametest/Config/DefaultGame.ini" />
+  </VirtualDirectory>
+  <Settings>
+    <Configuration Name="Debug">
+      <General CommandArguments="&quot;/home/mseidl/src/gametest/gametest.uproject&quot; -game -debug" WorkingDirectory="/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Debug" />
+      <General CommandArguments="&quot;/home/mseidl/src/gametest/gametest.uproject&quot; -game -debug" WorkingDirectory="/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Debug" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/mseidl/src/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe gametestEditor Linux Debug -project="/home/mseidl/src/gametest/gametest.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe gametestEditor Linux Debug -project="/home/mseidl/src/gametest/gametest.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe gametestEditor Linux Debug -project="/home/mseidl/src/gametest/gametest.uproject" -clean
+mono UnrealBuildTool.exe gametestEditor Linux Debug -project="/home/mseidl/src/gametest/gametest.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="DebugGame">
+      <General CommandArguments="&quot;/home/mseidl/src/gametest/gametest.uproject&quot; -game -debug" WorkingDirectory="/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux" Command="./UE4Editor" />
+      <General CommandArguments="&quot;/home/mseidl/src/gametest/gametest.uproject&quot; -game -debug" WorkingDirectory="/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux" Command="./UE4Editor" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/mseidl/src/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe gametestEditor Linux DebugGame -project="/home/mseidl/src/gametest/gametest.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe gametestEditor Linux DebugGame -project="/home/mseidl/src/gametest/gametest.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe gametestEditor Linux DebugGame -project="/home/mseidl/src/gametest/gametest.uproject" -clean
+mono UnrealBuildTool.exe gametestEditor Linux DebugGame -project="/home/mseidl/src/gametest/gametest.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Development">
+      <General CommandArguments="&quot;/home/mseidl/src/gametest/gametest.uproject&quot; -game" WorkingDirectory="/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux" Command="./UE4Editor" />
+      <General CommandArguments="&quot;/home/mseidl/src/gametest/gametest.uproject&quot; -game" WorkingDirectory="/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux" Command="./UE4Editor" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/mseidl/src/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe gametestEditor Linux Development -project="/home/mseidl/src/gametest/gametest.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe gametestEditor Linux Development -project="/home/mseidl/src/gametest/gametest.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe gametestEditor Linux Development -project="/home/mseidl/src/gametest/gametest.uproject" -clean
+mono UnrealBuildTool.exe gametestEditor Linux Development -project="/home/mseidl/src/gametest/gametest.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Shipping">
+      <General CommandArguments="&quot;/home/mseidl/src/gametest/gametest.uproject&quot; -game" WorkingDirectory="/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Shipping" />
+      <General CommandArguments="&quot;/home/mseidl/src/gametest/gametest.uproject&quot; -game" WorkingDirectory="/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Shipping" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/mseidl/src/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe gametestEditor Linux Shipping -project="/home/mseidl/src/gametest/gametest.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe gametestEditor Linux Shipping -project="/home/mseidl/src/gametest/gametest.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe gametestEditor Linux Shipping -project="/home/mseidl/src/gametest/gametest.uproject" -clean
+mono UnrealBuildTool.exe gametestEditor Linux Shipping -project="/home/mseidl/src/gametest/gametest.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <Configuration Name="Test">
+      <General CommandArguments="&quot;/home/mseidl/src/gametest/gametest.uproject&quot; -game" WorkingDirectory="/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Test" />
+      <General CommandArguments="&quot;/home/mseidl/src/gametest/gametest.uproject&quot; -game" WorkingDirectory="/home/mseidl/src/UnrealEngine/Engine/Binaries/Linux" Command="./UE4Editor-Linux-Test" />
+      <CustomBuild Enabled="yes">
+        <WorkingDirectory>/home/mseidl/src/UnrealEngine/Engine/Binaries/DotNET</WorkingDirectory>
+        <BuildCommand>mono UnrealBuildTool.exe gametestEditor Linux Test -project="/home/mseidl/src/gametest/gametest.uproject"</BuildCommand>
+        <CleanCommand>mono UnrealBuildTool.exe gametestEditor Linux Test -project="/home/mseidl/src/gametest/gametest.uproject" -clean</CleanCommand>
+        <RebuildCommand>mono UnrealBuildTool.exe gametestEditor Linux Test -project="/home/mseidl/src/gametest/gametest.uproject" -clean
+mono UnrealBuildTool.exe gametestEditor Linux Test -project="/home/mseidl/src/gametest/gametest.uproject"</RebuildCommand>
+      </CustomBuild>
+    </Configuration>
+    <GlobalSettings />
+  </Settings>
+  <GlobalSettings />
+</CodeLite_Project>
